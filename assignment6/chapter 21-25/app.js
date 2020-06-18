@@ -4,28 +4,28 @@ var lastName = prompt("Enter your Last Name");
 var fullName = firstName + " " + lastName;
 alert("Hello " + fullName);
 
-// //ques no 2
-// var favMob = prompt("Tell me your favourite Mobile Model");
-// var mobLength = favMob.length;
-//     document.write("My favourite phone is: " + favMob + "</br>Length of string: " + mobLength + "<hr />");
+//ques no 2
+var favMob = prompt("Tell me your favourite Mobile Model");
+var mobLength = favMob.length;
+document.write("My favourite phone is: " + favMob + "</br>Length of string: " + mobLength + "<hr />");
 
-// //ques no 3
-// var word = "Pakistani";
-// var word_Index = word.indexOf('n');
-//     document.write("String: " + word + "</br>Index of 'n': " + wordIndex + "<hr />");
+//ques no 3
+var word = "Pakistani";
+var word_Index = word.indexOf('n');
+document.write("String: " + word + "</br>Index of 'n': " + wordIndex + "<hr />");
 
-// //ques no 4
-// var word2 = "Hello World";
-// var word2_Index = word2.lastIndexOf('l');
-//     document.write("String: " + word2 + "</br>Last index of 'l': " + word2_Index + "<hr />");
+//ques no 4
+var word2 = "Hello World";
+var word2_Index = word2.lastIndexOf('l');
+document.write("String: " + word2 + "</br>Last index of 'l': " + word2_Index + "<hr />");
 
-// //ques no 5
-// var char_Index = word.charAt(3);
-// document.write("String: " + word + "</br>Character at index 3: " + char_Index + "<hr />");
+//ques no 5
+var char_Index = word.charAt(3);
+document.write("String: " + word + "</br>Character at index 3: " + char_Index + "<hr />");
 
-// //ques no 6
-// var conCat = fullName.concat();
-// document.write(conCat + "<hr />");
+//ques no 6
+var conCat = fullName.concat();
+document.write(conCat + "<hr />");
 
 // //ques no 7
 // var city = "Hyderabad";
