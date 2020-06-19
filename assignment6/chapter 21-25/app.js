@@ -87,15 +87,13 @@
 
 
 // // task 13
-// var userName = prompt("Enter your name");
-// var special = String.fromCharCode(33,44,46,64);     // ! , . @
-// for (var i = 0; i < userName.length; i++)
-// {
-//   if (special.indexOf(userName.charAt(i)) != -1)
-//   {
-//      alert ("Please enter a valid user name\nThis name contains special character(s)");
-//   }
-// }
+var userName = prompt("Enter your name");
+for (var i = 0; i < userName.length; i++) {
+    special = userName.charCodeAt(i);
+    if (special === 33 || special === 44 || special === 46 || special === 64) {
+        alert("this name conatins specail character(s)");
+    }
+}
 
 
 
@@ -120,41 +118,46 @@
 
 
 // // task 15
-var pass = prompt("Enter password:");
-var ascii = pass.charCodeAt(0);
-document.write("Entered password: " + pass + "<br>");
+// var pass = prompt("Enter password:");
+// var ascii = pass.charCodeAt(0);
+// document.write("Entered password: " + pass + "<br>");
 
-// 1.   check alphanumeric values
-if (((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) || (ascii >= 48 && ascii <= 57)) {
-    var alphanum = true;
-}
+// // 1.   check alphanumeric values
+// if (((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)) || (ascii >= 48 && ascii <= 57)) {
+//     var alphanum = true;
+// }
 
-// 2.   check length
-if (pass.length >= 6) {
-    var len = true;
-}
-else{
-    var len = false;
-    document.write("Password length sould be greater than 6<br>");
-}
+// // 2.   check length
+// if (pass.length >= 6) {
+//     var len = true;
+// }
+// else{
+//     var len = false;
+//     document.write("Password length sould be greater than 6<br>");
+// }
 
-// 3.   check first character
-if (pass[0] >= 0 && pass[0] <= 9) {
-    var startNum = false;
-    document.write("password can not begin from number<br>");
-}
-else {
-    var startNum = true;
-}
+// // 3.   check first character
+// if (pass[0] >= 0 && pass[0] <= 9) {
+//     var startNum = false;
+//     document.write("password can not begin from number<br>");
+// }
+// else {
+//     var startNum = true;
+// }
 
-// validation
-if (alphanum == true && len == true && startNum == true) {
-    document.write("Your password is correct<br>");
-}
-else {
-    document.write("Please enter a valid password<br>");
-}
+// // validation
+// if (alphanum == true && len == true && startNum == true) {
+//     document.write("Your password is correct<br>");
+// }
+// else {
+//     document.write("Please enter a valid password<br>");
+// }
 
 
 
 // task 16
+var uni = "University of Karachi";
+var res = uni.split("\n");
+for (var i = 0; i < res.length; i++) {
+    alert(res[i]);
+}
