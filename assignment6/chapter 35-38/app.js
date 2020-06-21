@@ -170,10 +170,81 @@
 
 
 
-// task 11
-function capitalize(sentence) {
-    var splitSentence = sentence.split(" ");
-    for (var s = 0; s < splitSentence.length; s++) {
-        
+// // task 11
+// function capitalize(sentence) {
+//     var splitSentence = sentence.split(" ");
+//     for (var s = 0; s < splitSentence.length; s++) {
+//         var word = splitSentence[s];
+//         var first = word.charAt(0).toUpperCase();
+//         var rest = word.slice(1);
+
+//         for(var i = 0; i<word.length; i++){
+//         var sent = first + rest;
+//         var com = [];
+//         com.push(sent);
+//         }
+
+//         for(var c = 0; c < com.length; c++){
+//             document.write(com + " ")
+//         }
+//     }    
+// }
+// var sentenceForCapital = "the quick brown fox";
+// document.write("EXAMPLE STRING: " + sentenceForCapital + "<br>");
+// capitalize("EXPECTED OUTPUT: "+sentenceForCapital);
+
+
+
+// task 12
+var str = "The quick  over thebrown fox jumped lazy dog";
+
+function findLongestWord(str) {
+    var strSplit = str.split(' ');
+
+    var longestWord = 0;
+
+    for (var i = 0; i < strSplit.length; i++) {
+        if (strSplit[i].length > longestWord) {
+            longestWord = strSplit[i].length;
+        }
     }
+
+    alert(strSplit[longestWord]);
 }
+
+
+findLongestWord(str);
+
+
+
+
+// // task 13
+// var strings = prompt("Write a string word");
+// var letter = prompt("Write a letter to find its occurence in that word");
+
+// function occurance(strings,letter){
+//     var occ = strings.split(letter).length - 1;
+//     document.write("Occurence of <b>" + letter + "</b> in <b>" + strings + "</b> is <b>" + occ + "</b><br><hr>")
+// }
+// occurance(strings,letter);
+
+
+
+// // task 14
+// document.write("<hr><h2>Geomatrizer:</h2>");
+// function calcCircumference(radius){
+//     var circumference = 2 * Math.PI * radius;
+//     return circumference.toFixed(2);
+// }
+
+// function calcArea(radius){
+//     var area = Math.PI * (radius*radius);
+//     return area.toFixed(2);
+// }
+
+// var radius = +prompt("Enter radius to find circumference and area of circle");
+// document.write("Radius of circle is: " + radius + "<br>");
+// document.write("Circumference of circle is: "+ calcCircumference(radius) + "<br>");
+// document.write("Area of circle is: "+ calcArea(radius) + "<br>");
+
+// // chap 35-38 complete 
