@@ -1,11 +1,10 @@
 body{
     font-family: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
-    background-color: black;
+    background-color: #D4AC0D;
 }
 .container{
     width: 1000px;
     height: 550px;
-    /* background-color: blanchedalmond; */
     margin: 20px auto;
 }
 .calculator{
