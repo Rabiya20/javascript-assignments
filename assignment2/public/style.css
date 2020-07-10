@@ -1,0 +1,54 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 3px;
+}
+.main{
+    width: 820px;
+}
+.top, .welcome{
+    text-align: center;
+}
+.formbody{
+    background-color: #6b5acd;
+    text-align: left;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px gray;
+}
+h1{
+    color: #6b5acd;
+    text-decoration: underline;
+    font-size: 20px;
+}
+table{
+    color: white;
+}
+.column1{
+    text-transform: uppercase;
+}
+.column2{
+    padding-top: 7px;
+}
+thead, tfoot{
+    text-align: center;
+}
+.welcome>h1, .welcome>a{
+    margin-top: 50px;
+    font-family: "Georgia, 'Times New Roman', Times, serif";
+}
+.thanx{
+    color: green;
+    font-size: 40px;
+}
+.msg{
+    color: #432dc0;
+    text-decoration: none;
+    font-size: 30px;
+}
+.welcome>a{
+    font-size: 40px;
+}
+hr{
+    width: 50%;
+    text-align: center;
+}
