@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+}
+.container{
+    background-color: aliceblue;
+    overflow: hidden;
+    position: relative;
+    top: 50px;
+    box-shadow: 5px 5px 5px gray;
+    text-align: center;
+}
+.buttons{
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+}
+.timer>h1{
+    font-size: 50px;
+    width: 140px;
+    background-color: gray;
+    color: honeydew;
+    box-shadow: 10px 10px 10px gainsboro;;
+    display: inline-block;
+}
+
+.bio{
+    background-color: ghostwhite;
+    color: black;
+    margin-top: 150px;
+    padding: 2px 5px;
+}

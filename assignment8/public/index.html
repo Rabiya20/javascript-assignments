@@ -13,9 +13,23 @@
 
 <body>
     <div class="container">
-<h1>hello</h1>
-        
+        <h1 class="h1">STOP WATCH</h1>
+        <div class="timer d-flex justify-content-around">
+            <h1 class="min" id="min">0</h1>
+            <h1 class="sec" id="sec">0</h1>
+            <h1 class="msec" id="msec">0</h1>
+        </div>
+        <div class="buttons flex">
+            <button onclick="start()" class="btn btn-primary" id="start">START</button>
+            <button onclick="pause()" class="btn btn-success" id="pause">PAUSE</button>
+            <button onclick="reset()" class="btn btn-danger" id="stop">Reset</button>
+        </div>
     </div>
+    <DIV class="bio">
+        <p>Name: <b>Rabia Mushtaque Ahmed</b></p>
+        <p>Registration: <b>WM9419 </b></p>
+        <p>Email: <b>rabiamushtaqmithani@gmail.com</b></p>
+    </DIV>
 </body>
 <script src="app.js"></script>
 
