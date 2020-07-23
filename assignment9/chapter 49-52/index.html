@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment#09</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <script>
+        document.write("<h1>*****Chapter 49-52 tasks*****</h1>")
+    </script>
+
+    <div class="container">
+        <div class="form">
+            <h2>Form - Person Details</h2>
+            <form action="#">
+                <div class="row">
+                    <div class="col">
+                        <label for="fname">Fisrt Name: </label>
+                        <input type="text" id="fname" required>
+                    </div>
+                    <div class="col">
+                        <label for="lname">Last Name: </label>
+                        <input type="text" id="lname" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="email">Email: </label>
+                        <input type="email" class="w-50" id="email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="contact">Contact Number: </label>
+                        <input type="number" id="contact" required>
+                    </div>
+                    <div class="col">
+                        <label for="city">City: </label>
+                        <input type="text" id="city" required>
+                    </div>
+                </div>
+                <button id="submit" onclick="formData()" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="data">
+                <p id="first-name"></p>
+
+                <p id="last-name"></p>
+
+                <p id="enter-email"></p>
+
+                <p id="enter-contact"></p>
+
+                <p id="city-name"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+            <h2>Paragrapgh content</h2>
+            <p class="show-para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, nisi voluptate, pariatur nam vitae
+                voluptates beatae eum eos sint aliquid itaque eligendi placeat perspiciatis autem deleniti temporibus
+                illum, est saepe!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat temporibus autem impedit tempora vel!
+                Fugit consequuntur unde, tempore, libero impedit, esse laboriosam molestiae perferendis odit enim vitae
+                dignissimos maiores sunt!
+                <span id="hidden-para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit odio in quo perspiciatis obcaecati
+                    sapiente, quos corporis distinctio dolor nam, animi veniam voluptatum reprehenderit omnis eaque iste
+                    accusamus. Excepturi, voluptate.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aliquam esse architecto aliquid
+                    accusamus magni quis rem quam ex sed nemo, maiores accusantium voluptatem at exercitationem
+                    excepturi ipsum animi minima.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam non perferendis maxime hic
+                    iure voluptates, aut obcaecati, itaque aperiam adipisci! Consequatur vero blanditiis accusantium
+                    laudantium ratione asperiores aperiam deleniti?
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis accusantium dolorem quibusdam,
+                    ipsam, officia illo alias magni ab atque quas eos tempora unde vitae maxime perferendis dicta, non
+                    culpa sit.
+                </span>
+            </p>
+            <button onclick="showcont()" id="btnshow" class="btn btn-info"></button>
+        </div>
+    </div>
+
+
+<div class="content">
+    <div class="container">
+        <h2>Students record</h2>
+        <table id="table">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td class="id">0</td>
+                <td>Jhone</td>
+                <td>10</td>
+                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
+                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
+            </tr>
+            <tr>
+                <td class="id">1</td>
+                <td>Jecky</td>
+                <td>10</td>
+                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
+                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
+            </tr>
+            <tr>
+                <td class="id">2</td>
+                <td>Olaf</td>
+                <td>10</td>
+                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
+                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
+            </tr>
+            <tr>
+                <td class="id">3</td>
+                <td>Babar</td>
+                <td>9</td>
+                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
+                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
+            </tr>
+            <tr>
+                <td class="id">4</td>
+                <td>Merry</td>
+                <td>12</td>
+                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
+                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

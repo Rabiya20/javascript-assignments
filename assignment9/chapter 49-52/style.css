@@ -1,0 +1,15 @@
+form{
+    margin: 20px;
+    width: 70%;
+}
+.row{
+    margin-bottom: 10px;
+}
+#btnshow{
+    position: relative;
+    top: -130px;
+}
+#btnhide{
+    position: relative;
+    top: 0px;
+}
