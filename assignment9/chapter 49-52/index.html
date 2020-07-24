@@ -91,53 +91,61 @@
     </div>
 
 
-<div class="content">
-    <div class="container">
-        <h2>Students record</h2>
-        <table id="table">
-            <tr>
-                <th>Index</th>
-                <th>Name</th>
-                <th>Class</th>
-            </tr>
-            <tr>
-                <td class="id">0</td>
-                <td>Jhone</td>
-                <td>10</td>
-                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
-                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
-            </tr>
-            <tr>
-                <td class="id">1</td>
-                <td>Jecky</td>
-                <td>10</td>
-                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
-                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
-            </tr>
-            <tr>
-                <td class="id">2</td>
-                <td>Olaf</td>
-                <td>10</td>
-                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
-                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
-            </tr>
-            <tr>
-                <td class="id">3</td>
-                <td>Babar</td>
-                <td>9</td>
-                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
-                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
-            </tr>
-            <tr>
-                <td class="id">4</td>
-                <td>Merry</td>
-                <td>12</td>
-                <td><input type="button" value="Edit" class="btn btn-success"  onclick="editData()"></td>
-                <td><input type="button" value="Delete" class="btn btn-danger"  onclick="SomeDeleteRowFunction()"></td>
-            </tr>
-        </table>
+    <div class="content">
+        <div class="">
+            <h2>Students record</h2>
+            <table id="table">
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault()">
+                            <div class="field">
+                                <label for="full-name">Full Name</label>
+                                <input type="text" name="full-name" id="full-name">
+                            </div>
+                            <div class="field">
+                                <label for="class">Class</label>
+                                <input type="text" name="class" id="class">
+                            </div>
+                            <div class="field">
+                                <label for="reg">Registration</label>
+                                <input type="text" name="reg" id="reg">
+                            </div>
+                            <div class="field">
+                                <label for="grade">Grade</label>
+                                <input type="text" name="grade" id="grade">
+                            </div>
+                            <div class="field">
+                                <label for="cell">Contact</label>
+                                <input type="number" name="cell" id="cell">
+                            </div>
+                            <div class="">
+                                <button onclick="addrec()" class="btn btn-success">Add Record</button>
+                            </div>
+                        </form>
+                    </td>
+                    <td id="rec">
+                        <!-- all redor -->
+                        <table id="stud-rec">
+                            <thead>
+                                <tr class="p-3 mb-2 bg-dark text-white ">
+                                    <th class="p-2 mb-1">Full Name</th>
+                                    <th class="p-2 mb-1">Class</th>
+                                    <th class="p-2 mb-1">Registration</th>
+                                    </th>
+                                    <th class="p-2 mb-1">Grade</th>
+                                    <th class="p-2 mb-1">Contact</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
     </div>
-</div>
 
     <script src="app.js"></script>
 </body>

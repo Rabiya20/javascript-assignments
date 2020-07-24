@@ -13,3 +13,11 @@ form{
     position: relative;
     top: 0px;
 }
+.field{
+    width: 40%;
+    margin: 5px;
+}
+#rec{
+    height: 300;
+    display: inline-block;
+}
