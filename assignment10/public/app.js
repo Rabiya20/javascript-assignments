@@ -27,9 +27,6 @@ function addTodo(){
 
     li.appendChild(editBtn);
     li.appendChild(delBtn);
-    
-
-
 
     list.appendChild(li);
     totoItem.value = "";
